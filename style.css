@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ink: #1c1916;
+  --muted: #5c534b;
+  --paper: #f4efe8;
+  --card: #fffaf4;
+  --accent: #b5481f;
+  --line: #e4d9cc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 7rem 8vw 5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: Georgia, "Palatino Linotype", Palatino, serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin-top: 1.4rem;
+  max-width: 28rem;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2.2rem;
+  padding: 0.85rem 1.5rem;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.btn:hover {
+  background: var(--accent);
+}
+
+main {
+  padding: 0 8vw 5rem;
+}
+
+section {
+  padding-top: 4.5rem;
+  max-width: 68rem;
+}
+
+h2 {
+  font-family: Georgia, "Palatino Linotype", Palatino, serif;
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.about p {
+  max-width: 40rem;
+  font-size: 1.12rem;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.grid article {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 1.6rem 1.4rem 1.8rem;
+  min-height: 13rem;
+}
+
+.grid span {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  margin-bottom: 1.1rem;
+}
+
+.grid h3 {
+  font-family: Georgia, "Palatino Linotype", Palatino, serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+
+.grid p,
+.contact p {
+  color: var(--muted);
+}
+
+.mail {
+  margin-top: 0.7rem;
+  font-size: 1.25rem;
+  color: var(--ink) !important;
+}
+
+footer {
+  padding: 2rem 8vw 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 4.5rem 7vw 3.5rem;
+  }
+}
