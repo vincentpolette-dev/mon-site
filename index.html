@@ -3,53 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Clara Duval — Graphiste &amp; directrice artistique</title>
+  <title>Studio Lueur — Design &amp; identité de marque à Lyon</title>
+  <meta name="description" content="Studio Lueur, studio de design à Lyon : identités de marque, sites web et motion design.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <p class="eyebrow">Portfolio</p>
-    <h1>Clara Duval</h1>
-    <p class="lead">Graphiste &amp; directrice artistique à Lyon.<br>Identités, sites vitrines et éditions, pensés avec soin.</p>
-    <a class="btn" href="#contact">Me contacter</a>
+  <div class="mesh" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#" class="logo"><span class="logo-dot"></span>Studio Lueur</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#projets">Projets</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact" class="nav-cta">Démarrer un projet</a>
+    </nav>
   </header>
 
   <main>
-    <section class="about">
-      <h2>À propos</h2>
-      <p>J’accompagne les indépendants et les petites maisons dans la création d’une image claire, durable et reconnaissable. Chaque projet commence par l’écoute, puis se traduit en formes, en couleurs et en mots.</p>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="pill reveal" style="--d:.05s"><span class="live"></span>Studio de design · Lyon · Disponible en janvier</p>
+        <h1 class="reveal" style="--d:.15s">On donne de <em>l’éclat</em><br>à vos idées.</h1>
+        <p class="lead reveal" style="--d:.3s">Identités de marque, sites web et motion design pour les marques qui veulent qu’on se souvienne d’elles.</p>
+        <div class="actions reveal" style="--d:.45s">
+          <a href="#contact" class="btn btn-primary">Parlons de votre projet <span aria-hidden="true">→</span></a>
+          <a href="#projets" class="btn btn-ghost">Voir nos projets</a>
+        </div>
+        <ul class="stats reveal" style="--d:.6s">
+          <li><strong>120+</strong><span>projets livrés</span></li>
+          <li><strong>4,9/5</strong><span>note clients</span></li>
+          <li><strong>8 ans</strong><span>d’expérience</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art reveal" style="--d:.35s" aria-hidden="true">
+        <div class="orb"></div>
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="glass card-a">
+          <div class="swatches"><i></i><i></i><i></i><i></i></div>
+          <p class="card-title">Palette « Aurore »</p>
+          <p class="card-sub">Identité · Maison Solène</p>
+        </div>
+        <div class="glass card-b">
+          <p class="kpi">+38 %</p>
+          <p class="card-sub">de conversions après refonte</p>
+          <svg viewBox="0 0 160 48" class="spark"><path d="M2 40 L26 34 L48 37 L70 24 L94 27 L116 14 L138 16 L158 4" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff8a5b"/><stop offset="1" stop-color="#c58bff"/></linearGradient></defs></svg>
+        </div>
+        <div class="glass card-c">
+          <span class="avatar"></span>
+          <div><p class="card-title">Nouveau site en ligne</p><p class="card-sub">il y a 2 minutes</p></div>
+        </div>
+      </div>
     </section>
 
-    <section class="work">
-      <h2>Projets récents</h2>
-      <div class="grid">
-        <article>
-          <span>01</span>
-          <h3>Maison Solène</h3>
-          <p>Identité visuelle et papeterie pour une céramiste lyonnaise.</p>
+    <div class="marquee" aria-label="Ils nous font confiance">
+      <div class="track">
+        <span>Maison Solène</span><span>✦</span><span>Atelier Nord</span><span>✦</span><span>Revue Clairière</span><span>✦</span><span>Café Ombre</span><span>✦</span><span>Lumen Records</span><span>✦</span><span>Hôtel Saint-Clair</span><span>✦</span>
+        <span>Maison Solène</span><span>✦</span><span>Atelier Nord</span><span>✦</span><span>Revue Clairière</span><span>✦</span><span>Café Ombre</span><span>✦</span><span>Lumen Records</span><span>✦</span><span>Hôtel Saint-Clair</span><span>✦</span>
+      </div>
+    </div>
+
+    <section id="services" class="section">
+      <p class="kicker">Ce que nous faisons</p>
+      <h2>Trois savoir-faire,<br>une seule exigence.</h2>
+      <div class="services">
+        <article class="glass service">
+          <span class="num">01</span>
+          <h3>Identité de marque</h3>
+          <p>Logo, typographies, couleurs et ton : un univers cohérent, du carton d’invitation à l’enseigne.</p>
         </article>
-        <article>
-          <span>02</span>
-          <h3>Atelier Nord</h3>
-          <p>Site vitrine et direction artistique pour un studio photo.</p>
+        <article class="glass service">
+          <span class="num">02</span>
+          <h3>Sites web</h3>
+          <p>Des sites rapides, élégants et faciles à mettre à jour, pensés d’abord pour vos visiteurs.</p>
         </article>
-        <article>
-          <span>03</span>
-          <h3>Revue Clairière</h3>
-          <p>Conception éditoriale d’un recueil annuel de photographies.</p>
+        <article class="glass service">
+          <span class="num">03</span>
+          <h3>Motion design</h3>
+          <p>Animations, vidéos courtes et contenus pour les réseaux, qui donnent du mouvement à votre marque.</p>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Un projet en tête ? Écrivez-moi.</p>
-      <p class="mail">bonjour@claraduval.fr</p>
+    <section id="projets" class="section">
+      <p class="kicker">Projets récents</p>
+      <h2>Quelques histoires<br>dont nous sommes fiers.</h2>
+      <div class="bento">
+        <a class="tile t-big" href="#"><div class="art art-1"></div><div class="tile-info"><span>Identité · 2026</span><h3>Maison Solène</h3></div></a>
+        <a class="tile t-tall" href="#"><div class="art art-2"></div><div class="tile-info"><span>Site web · 2026</span><h3>Atelier Nord</h3></div></a>
+        <a class="tile" href="#"><div class="art art-3"></div><div class="tile-info"><span>Édition · 2025</span><h3>Revue Clairière</h3></div></a>
+        <a class="tile" href="#"><div class="art art-4"></div><div class="tile-info"><span>Motion · 2025</span><h3>Lumen Records</h3></div></a>
+      </div>
+    </section>
+
+    <section id="avis" class="section">
+      <figure class="glass quote">
+        <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
+        <blockquote>« Studio Lueur a compris notre maison mieux que nous-mêmes. Notre nouvelle identité a changé la façon dont nos clients nous regardent. »</blockquote>
+        <figcaption><span class="avatar"></span><span><strong>Camille Arnaud</strong><br>Fondatrice, Maison Solène</span></figcaption>
+      </figure>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact">
+        <div>
+          <h2>Un projet en tête ?</h2>
+          <p>Racontez-nous votre idée, nous vous répondons sous 48 heures.</p>
+        </div>
+        <a class="btn btn-light" href="mailto:bonjour@studiolueur.fr">bonjour@studiolueur.fr <span aria-hidden="true">→</span></a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Clara Duval — Lyon</p>
+  <footer class="footer">
+    <a href="#" class="logo"><span class="logo-dot"></span>Studio Lueur</a>
+    <p>Fait avec soin à Lyon · © 2026 Studio Lueur</p>
+    <nav><a href="#">Instagram</a><a href="#">Behance</a><a href="#">LinkedIn</a></nav>
   </footer>
 </body>
 </html>
